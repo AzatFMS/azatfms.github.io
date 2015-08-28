@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width; initial-scale=1" />
+		<title>TEST</title>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="wrapper"></div>
+		<header>
+			<div class="scrolled-menu">
+				<menu>
+					<li class="active"><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">WORK</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</menu>
+			</div>
+			
+			<menu>
+					<li class="active"><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">WORK</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">CONTACT</a></li>
+			</menu>
+			<h1>Hi there! We are the new kids on the block<br/>
+				and we build awesome websites and mobile apps
+			</h1>
+			
+			<a href="" class="btn">WORK WITH US!</a>
+		</header>
+		<div class="info-block green">
+			<div class="wrapper">
+				<h2 class="underline">SERVICES WE PROVIDE</h2>
+				<p class="description">We are working with both individuals and businesses from all over the globe<br/> 
+					to create awesome websites and applications.</p>
+					
+				<ul class="services-list"><!--
+				--><li class="service-branding">
+						<h3>Branding</h3>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+					</li><!--
+					--><li class="service-design">
+						<h3>Design</h3>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+						</li><!--
+					--><li class="service-development">
+						<h3>Development</h3>
+						<p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+					</li><!--
+					--><li class="service-rocket">
+						<h3>ROCKET SCIENCE</h3>
+						<p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+					</li>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			//Для сверки с шаблоном
+			$('#wrapper').css('position','relative');
+			$('#wrapper').append('<img id="overlay" style="opacity:0.5; left: -44px; top: 0; z-index:1000; position:absolute; display:none;" src="images/tmp.png" />');
+			
+			$(document).keyup(function (e) {
+				if (e.which == 96) {
+					$('#overlay').toggle();	
+				}
+			});
+		</script>
+	</body>
+</html>

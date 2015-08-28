@@ -1,0 +1,194 @@
+@import url(reset.css);
+
+body {
+	font: 16px 'Raleway', sans-serif;
+}
+
+h1  {
+	color: #ffffff;
+	font-size: 38px;
+	text-align: center;
+	margin: 140px 0 53px 0;
+	line-height: 48px;
+}
+
+h2 {
+	font: 38px 'Oxygen', sans-serif;
+	font-weight:300;
+	text-align: center;
+	padding: 98px 10px 0 10px;
+    letter-spacing: 3px;
+	margin-bottom: 33px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font: 22px 'Oxygen', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.description {
+	font-size: 18px;
+}
+
+p {
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+a {
+	color: inherit;
+}
+
+.light {
+	color: #ffffff;
+}
+
+.underline:after {
+	display: block;
+	margin: 14px auto 0 auto;
+	content: '';
+	height: 3px;
+	width: 87px;
+	opacity: 0.5;
+	background: #ffffff;
+}
+
+.btn {
+	display: inline-block;
+	font: 25px 'Oxygen', sans-serif bold;
+	background: #ffffff;
+	border-radius: 4px;
+	color: #f57a82;
+	padding: 20px 35px;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+header {
+	background: url(../images/header_bg.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 60px 20px 20px 20px;
+	text-align: center;
+	height: 516px;
+	color: #ffffff;
+}
+
+.info-block  {
+	
+}
+
+.info-block.green {
+	background: #5db5a4;
+	color: #ffffff;
+}
+
+.wrapper {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+header menu {
+	list-style: none;
+	text-align: right;
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+header menu li {
+	display: inline-block;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	margin-left: 25px;
+}
+
+header menu li.active,
+header menu li:hover {
+	border-color: #ffffff;
+}
+
+header menu li  a {
+	display: block;
+	padding: 7px 13px;
+	color: inherit;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.scrolled-menu {
+	display: none;
+}
+
+header .scrolled-menu {
+	background: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0;
+}
+
+header .scrolled-menu menu li {
+	color: #383838;
+}
+
+header .scrolled-menu menu li.active,
+header .scrolled-menu menu li:hover {
+	border-color: #d6cece;
+}
+
+.services-list {
+	display: block;
+	list-style: none;
+	padding: 50px 0;
+}
+
+.services-list li {
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	padding: 196px 20px 20px 20px;
+	box-sizing: border-box;
+	background-position: top center;
+	background-repeat: no-repeat;
+	vertical-align: top;
+}
+
+.service-branding {
+	background-image: url(../images/services_branding_bg.png);
+}
+
+.service-design {
+	background-image: url(../images/services_design_bg.png);
+}
+
+.service-development {
+	background-image: url(../images/services_development_bg.png);
+}
+
+.service-rocket {
+	background-image: url(../images/services_rocket_bg.png);
+}
+
+@media(max-width: 800px){
+	
+	h1 {
+		margin: 20px 0;
+	}
+	
+	header menu {
+		text-align: center;
+	}
+	
+	header menu li {
+		margin: 5px;
+	}
+	
+	.services-list li {
+		width: 50%;
+	}
+}

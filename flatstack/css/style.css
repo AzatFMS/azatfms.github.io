@@ -138,6 +138,7 @@ header .scrolled-menu {
 	width: 100%;
 	padding: 20px;
 	box-sizing: border-box;
+	z-index: 1000;
 }
 
 header .scrolled-menu menu li {

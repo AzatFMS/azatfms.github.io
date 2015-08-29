@@ -8,26 +8,28 @@
 		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<link href="css/jquery.circliful.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
 		<div id="wrapper"></div>
+		<section id="home"></section>
 		<header>
 			<div class="scrolled-menu">
 				<menu>
-					<li class="active"><a href="#">HOME</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">WORK</a></li>
-					<li><a href="#">BLOG</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#work">WORK</a></li>
+					<li><a href="#blog">BLOG</a></li>
+					<li><a href="#contact">CONTACT</a></li>
 				</menu>
 			</div>
 			
 			<menu>
-					<li class="active"><a href="#">HOME</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">WORK</a></li>
-					<li><a href="#">BLOG</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#work">WORK</a></li>
+					<li><a href="#blog">BLOG</a></li>
+					<li><a href="#contact">CONTACT</a></li>
 			</menu>
 			<h1>Hi there! We are the new kids on the block<br/>
 				and we build awesome websites and mobile apps
@@ -37,7 +39,7 @@
 		</header>
 		
 		<!-- SERVICES -->
-		<div class="info-block green">
+		<section id="about" class="info-block green">
 			<div class="wrapper">
 				<h2 class="underline">SERVICES WE PROVIDE</h2>
 				<div class="description">We are working with both individuals and businesses from all over the globe<br/> 
@@ -63,20 +65,107 @@
 						<h3>ROCKET SCIENCE</h3>
 						<p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
 					</li>
+				</ul>
 			</div>
-		</div>
+		</section>
 		<!-- /SERVICES -->
 		
 		<!-- TEAM -->
-		<div class="info-block white">
+		<section  id="work" class="info-block grey">
 			<div class="wrapper">
 				<h2 class="underline">MEET OUR TEAM</h2>
 				<div class="description">We are a small team of designers and developers, who help brands with big ideas.</div>
+				
+				<ul class="team-list"><!--
+				--><li>
+						<img src="images/team_1.png"/>
+						<h3>James Collins</h3>
+						<div class="team-post">CEO / Marketing Guru</div>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+						<div class="team-socials">
+							<a href="" class="fa fa-facebook"><a>
+							<a href="" class="fa fa-twitter"><a>
+							<a href="" class="fa fa-linkedin"><a>
+							<a href="" class="fa fa-envelope"><a>
+						</div>
+					</li><!--
+					--><li>
+						<img src="images/team_2.png"/>
+						<h3>Peter Davis</h3>
+						<div class="team-post">Creative Director</div>
+						<p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+			<div class="team-socials">
+							<a href="" class="fa fa-facebook"></a>
+							<a href="" class="fa fa-twitter"></a>
+							<a href="" class="fa fa-linkedin"></a>
+							<a href="" class="fa fa-envelope"></a>
+						</div>
+						</li><!--
+					--><li>
+						<img src="images/team_3.png"/>
+						<h3>Olivia Wilde</h3>
+						<div class="team-post">Lead Designer</div>
+						<p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+					<div class="team-socials">
+							<a href="" class="fa fa-twitter"></a>
+							<a href="" class="fa fa-linkedin"></a>
+							<a href="" class="fa fa-envelope"></a>
+						</div>
+					</li><!--
+					--><li>
+						<img src="images/team_4.png"/>
+						<h3>Ashley Greene</h3>
+						<div class="team-post">SEO / Developer</div>
+						<p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div class="team-socials">
+							<a href="" class="fa fa-facebook"></a>
+							<a href="" class="fa fa-twitter"></a>
+							<a href="" class="fa fa-envelope"></a>
+						</div>
+					</li>
+				</ul>
 			</div>
-		</div>
+		</section>
 		<!-- /TEAM -->
 		
+		<!-- SCILLS -->
+		<section  id="blog" class="info-block white">
+			<div class="wrapper">
+				<h2 class="underline">WE GOT SKILLS!</h2>
+				<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br/>
+					tempor incididunt ut labore et dolore magna aliqua.</div>
+				<ul class="scills-list"><!--
+				--><li>
+				<div class="circle-diagramm-block">
+					<div  class="circle-diagramm" data-dimension="180" data-text="90" data-width="13" data-fontsize="50" data-percent="90" data-fgcolor="#3c989e" data-bgcolor="#fff" data-fill="#fff"></div>
+				</div>
+						<h3>Web Design</h3>
+					</li><!--
+					--><li>
+					<div class="circle-diagramm-block">
+					<div  class="circle-diagramm" data-dimension="180" data-text="75" data-width="13" data-fontsize="50" data-percent="75" data-fgcolor="#f57a82" data-bgcolor="#fff" data-fill="#fff"></div>
+				</div>
+						<h3>HTML / CSS</h3>
+						</li><!--
+					--><li>
+					<div class="circle-diagramm-block">
+					<div  class="circle-diagramm" data-dimension="180" data-text="70" data-width="13" data-fontsize="50" data-percent="70" data-fgcolor="#3c989e" data-bgcolor="#fff" data-fill="#fff"></div>
+				</div>
+						<h3>GRAPHIC DESIGN</h3>
+					</li><!--
+					--><li>
+					<div class="circle-diagramm-block">
+					<div  class="circle-diagramm" data-dimension="180" data-text="85" data-width="13" data-fontsize="50" data-percent="85" data-fgcolor="#f57a82" data-bgcolor="#fff" data-fill="#fff"></div>
+				</div>
+						<h3>UI / UX</h3>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- /SCILLS -->
+		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/jquery.circliful.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript">
 			//Для сверки с шаблоном

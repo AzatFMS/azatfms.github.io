@@ -12,10 +12,61 @@
 		   }
 	   }
 	   
+	   //Индикация активного пункта меню
+	   function initActiveMenu() {
+			var positions = {};
+			$('section').each(function() {
+				positions[$(this).offset().top] = $(this).attr('id');
+			})
+			
+			
+			
+			function getIdByPosition() {
+				var scroll_top = $(this).scrollTop(),
+				current_id;
+				for (var position in positions) {
+					if (scroll_top >= position) {
+						current_id = positions[position];
+					}
+				}
+				return current_id;
+			}
+			
+			var current_id = getIdByPosition();
+			$('menu li').removeClass('active');
+			$('menu li a[href="#' + current_id + '"]').parent().addClass('active');
+	   }
+	   
+	   var scills_init = false;
+	   
+	   function scillsInit() {
+		   if (!scills_init) {
+			   
+			   var scroll_top = $(this).scrollTop() + $(window).height(),
+				scills_position = $('.scills-list').offset().top + 160;
+				if (scroll_top >= scills_position) {
+					console.log([scroll_top, scills_position]);
+					$('.circle-diagramm').circliful();
+					scills_init = true;
+				}
+		   }
+	   }
+	   
        $(window).scroll(function(){
            checkScrolledMenu();
+		   initActiveMenu();
+		   scillsInit();
        });
 	   
 	   checkScrolledMenu();
+	   initActiveMenu();
+	   scillsInit();
 	  
-   });     
+		$('menu a').click(function (event) {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 1000);
+		});
+
+});     

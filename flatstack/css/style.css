@@ -295,6 +295,11 @@ header .scrolled-menu menu li:hover {
 		width: 100%;
 	}
 	
+	
+	.team-socials {
+		position: static;
+	}
+	
 	.scills-list li,
 	.services-list li {
 		width: 50%;

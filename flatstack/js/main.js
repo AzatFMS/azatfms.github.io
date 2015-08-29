@@ -45,9 +45,9 @@
 			   var scroll_top = $(this).scrollTop() + $(window).height(),
 				scills_position = $('.scills-list').offset().top + 160;
 				if (scroll_top >= scills_position) {
-					console.log([scroll_top, scills_position]);
-					$('.circle-diagramm').circliful();
+					
 					scills_init = true;
+					$('.circle-diagramm').circliful();
 				}
 		   }
 	   }

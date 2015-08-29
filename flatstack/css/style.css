@@ -32,12 +32,14 @@ h3 {
 
 .description {
 	font-size: 18px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
 }
 
 p {
-	text-align: center;
 	letter-spacing: 1px;
 	margin-bottom: 20px;
+	line-height: 24px;
 }
 
 a {
@@ -55,7 +57,7 @@ a {
 	height: 3px;
 	width: 87px;
 	opacity: 0.5;
-	background: #ffffff;
+	background: #cccccc;
 }
 
 .btn {
@@ -79,12 +81,17 @@ header {
 }
 
 .info-block  {
-	
+	text-align: center;
 }
 
 .info-block.green {
 	background: #5db5a4;
 	color: #ffffff;
+}
+
+.info-block.white {
+	background: #ffffff;
+	color: #383838;
 }
 
 .wrapper {
@@ -129,7 +136,8 @@ header .scrolled-menu {
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 20px 0;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 header .scrolled-menu menu li {
@@ -144,7 +152,7 @@ header .scrolled-menu menu li:hover {
 .services-list {
 	display: block;
 	list-style: none;
-	padding: 50px 0;
+	padding: 50px 0 60px 0;
 }
 
 .services-list li {

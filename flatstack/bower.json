@@ -1,0 +1,8 @@
+{
+  "name": "flatstack-test",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery-plugin-circliful": "git://github.com/pguso/jquery-plugin-circliful.git#~0.1.5",
+    "less": "~2.5.1"
+  }
+}

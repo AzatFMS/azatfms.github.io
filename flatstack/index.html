@@ -3,12 +3,13 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width; initial-scale=1" />
-		<title>TEST</title>
+		<title>FLATSTACK TEST</title>
 		<link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link href="css/style.css" type="text/css" rel="stylesheet" />
-		<link href="css/jquery.circliful.css" type="text/css" rel="stylesheet" />
+		<!--<link href="css/style.css" type="text/css" rel="stylesheet" />-->
+		<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+		<link href="bower_components/jquery-plugin-circliful/css/jquery.circliful.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
 		<div id="wrapper"></div>
@@ -39,7 +40,7 @@
 		</header>
 		
 		<!-- SERVICES -->
-		<section id="about" class="info-block green">
+		<section id="about" class="green">
 			<div class="wrapper">
 				<h2 class="underline">SERVICES WE PROVIDE</h2>
 				<div class="description">We are working with both individuals and businesses from all over the globe<br/> 
@@ -71,7 +72,7 @@
 		<!-- /SERVICES -->
 		
 		<!-- TEAM -->
-		<section  class="info-block grey">
+		<section  class="grey">
 			<div class="wrapper">
 				<h2 class="underline">MEET OUR TEAM</h2>
 				<div class="description">We are a small team of designers and developers, who help brands with big ideas.</div>
@@ -129,7 +130,7 @@
 		<!-- /TEAM -->
 		
 		<!-- SCILLS -->
-		<section  class="info-block white">
+		<section  class="white">
 			<div class="wrapper">
 				<h2 class="underline">WE GOT SKILLS!</h2>
 				<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br/>
@@ -165,7 +166,7 @@
 		<!-- /SCILLS -->
 		
 		<!-- WORKS -->
-		<section  id="work" class="info-block black">
+		<section  id="work" class="black">
 			<div class="wrapper">
 				<h2 class="underline">OUR PORTFOLIO</h2>
 				<div class="description">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet<br/>
@@ -253,7 +254,7 @@
 		<!-- /WORKS -->
 		
 		<!-- ABOUT US -->
-		<section  id="blog" class="info-block pink">
+		<section  id="blog" class="pink">
 			<div class="wrapper">
 				<h2 class="underline">WHAT POEPLE SAY ABOUT US</h2>
 				<div class="description">Our clients love us!</div>
@@ -300,7 +301,7 @@
 		<!-- ABOUT US -->
 		
 		<!-- CONTACT -->
-		<section  id="contact" class="info-block white">
+		<section  id="contact" class="white">
 			<div class="wrapper">
 				<h2 class="underline">GET IN TOUCH</h2>
 				<div class="description">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</div>
@@ -337,19 +338,9 @@
 			</div>
 		</footer>
 		
-		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script type="text/javascript" src="js/jquery.circliful.js"></script>
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/less/dist/less.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="bower_components/jquery-plugin-circliful/js/jquery.circliful.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript">
-			//Для сверки с шаблоном
-			$('#wrapper').css('position','relative');
-			$('#wrapper').append('<img id="overlay" style="opacity:0.5; left: -44px; top: -26px; z-index:1000; position:absolute; display:none;" src="images/tmp.png" />');
-			
-			$(document).keyup(function (e) {
-				if (e.which == 96) {
-					$('#overlay').toggle();	
-				}
-			});
-		</script>
 	</body>
 </html>

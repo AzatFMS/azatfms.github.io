@@ -2,6 +2,12 @@
 
 body {
 	font: 16px 'Raleway', sans-serif;
+	font-weight: 300;
+}
+
+input,
+textarea {
+	font-family: 'Raleway', sans-serif;
 }
 
 h1  {
@@ -416,6 +422,91 @@ header .scrolled-menu menu li:hover {
 	text-transform: uppercase;
 }
 
+.contact-form {
+	padding: 40px 0 110px 0;
+	max-width: 900px;
+	margin: 0 auto;
+	padding-bottom: 110px;
+}
+
+.contact-form  input[type='text'],
+.contact-form  input[type='email'],
+.contact-form  textarea {
+	font-size: 18px;
+	border: 1px solid #d7d7d7;
+	border-radius: 4px;
+	outline: none;
+	padding: 20px;
+	color: #383838;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.contact-form  textarea {
+	min-height: 200px;
+
+}
+
+.contact-form  input[type='text']:focus,
+.contact-form  input[type='email']:focus,
+.contact-form  textarea:focus {
+	border-color: #878787;
+}
+
+.contact-form .left-input,
+.contact-form .right-input {
+	display: inline-block;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.contact-form .left-input {
+	padding: 10px 10px 10px 20px;
+}
+
+.contact-form .right-input {
+	padding: 10px 20px 10px 10px;
+}
+
+.contact-form .full-input {
+	padding: 10px 20px 40px 20px;
+}
+
+.contact-form  input[type='submit'] {
+	font-size: 25px;
+	border: 2px solid #ed5276;
+	border-radius: 4px;
+	outline: none;
+	background: #ed5276;
+	color: #ffffff;
+	padding: 20px 40px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-top: 20px;
+}
+
+.contact-form  input[type='submit']:hover {
+	color: #ed5276;
+	background: #ffffff;
+}
+
+footer {
+	background: #e7e7e7;
+	color: #b2b2b2;
+	text-align: center;
+	padding: 50px 20px;
+}
+
+.footer-socials {
+	padding: 15px 0;
+}
+
+.footer-socials a{
+	font-size: 50px;
+	text-decoration: none;
+	margin: 0 14px;
+}
+
 @media(max-width: 800px){
 	
 	h1 {
@@ -438,7 +529,6 @@ header .scrolled-menu menu li:hover {
 		width: 100%;
 	}
 	
-	
 	.team-socials {
 		position: static;
 	}
@@ -451,5 +541,11 @@ header .scrolled-menu menu li:hover {
 	
 	.clients-list li {
 		width: 100%;
+	}
+	
+	.contact-form .left-input,
+	.contact-form .right-input {
+		width: 100%;
+		padding: 10px 20px;
 	}
 }

@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width; initial-scale=1" />
 		<title>TEST</title>
-		<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -83,10 +83,10 @@
 						<div class="team-post">CEO / Marketing Guru</div>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
 						<div class="team-socials">
-							<a href="" class="fa fa-facebook"><a>
-							<a href="" class="fa fa-twitter"><a>
-							<a href="" class="fa fa-linkedin"><a>
-							<a href="" class="fa fa-envelope"><a>
+							<a href="" class="fa fa-facebook"></a>
+							<a href="" class="fa fa-twitter"></a>
+							<a href="" class="fa fa-linkedin"></a>
+							<a href="" class="fa fa-envelope"></a>
 						</div>
 					</li><!--
 					--><li>
@@ -299,13 +299,51 @@
 		</section>
 		<!-- ABOUT US -->
 		
+		<!-- CONTACT -->
+		<section  id="contact" class="info-block white">
+			<div class="wrapper">
+				<h2 class="underline">GET IN TOUCH</h2>
+				<div class="description">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</div>
+				
+				<form action="" method="POST" class="contact-form">
+				<div class="left-input">
+					<div class="input-box">
+						<input type="text" name="Contact[name]" required="required" placeholder="Your Name"/>
+					</div>
+				</div><!--
+				--><div class="right-input">
+					<div class="input-box">
+						<input type="email" name="Contact[email]" required="required" placeholder="Your Email"/>
+					</div>
+				</div>
+				<div class="full-input">
+				<textarea  name="Contact[message]"  placeholder="Your Message"></textarea>
+				</div>
+				<input type="submit" value="SEND MESSAGE"> 
+				</form>
+			</div>
+		</section>
+		<!-- CONTACT -->
+		
+		
+		<footer>
+			<p>FOLLOW US</p>
+			<div class="footer-socials">
+				<a href="" class="fa fa-github"></a>
+				<a href="" class="fa fa-twitter"></a>
+				<a href="" class="fa fa-dribbble"></a>
+				<a href="" class="fa fa-facebook-square"></a>
+				<a href="" class="fa fa-instagram"></a>
+			</div>
+		</footer>
+		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="js/jquery.circliful.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript">
 			//Для сверки с шаблоном
 			$('#wrapper').css('position','relative');
-			$('#wrapper').append('<img id="overlay" style="opacity:0.5; left: -44px; top: 0; z-index:1000; position:absolute; display:none;" src="images/tmp.png" />');
+			$('#wrapper').append('<img id="overlay" style="opacity:0.5; left: -44px; top: -26px; z-index:1000; position:absolute; display:none;" src="images/tmp.png" />');
 			
 			$(document).keyup(function (e) {
 				if (e.which == 96) {

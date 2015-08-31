@@ -196,8 +196,8 @@ header .scrolled-menu menu li:hover {
   position: relative;
 }
 .team-list li img {
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  width: 100%;
   margin-bottom: 30px;
 }
 .team-list li h3 {
@@ -385,6 +385,7 @@ header .scrolled-menu menu li:hover {
   font-weight: bold;
   letter-spacing: 2px;
   margin-top: 20px;
+  cursor: pointer;
 }
 .contact-form input[type='submit']:hover {
   color: #ed5276;

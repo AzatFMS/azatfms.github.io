@@ -94,7 +94,7 @@
 	var scroll_manager = new ScrollManager({
 		position_actions: [
 			{
-				position: $('.scills-list').offset().top,
+				position:  $('.scills-list').offset().top - $('.scills-list').outerHeight(),
 				action: function() {
 					$('.circle-diagramm').circliful();
 				}

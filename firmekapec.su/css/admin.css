@@ -1,0 +1,166 @@
+/* Defoult styles */
+html, body, div, span,ol, ul, li,table, tbody, thead, tr, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+html,body {
+    height: 100%;
+    position: relative;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.link-active {
+    color: #0099FF!important;
+}
+.ta-center {
+    text-align: center;
+}
+.clearfix {
+    clear: both;
+}
+.fr {
+    float: right;
+}
+.w100 {
+    width: 100%;
+}
+.admin-header {
+    background: url("../css/bg.gif") repeat-x;
+    padding: 10px 25px;
+}
+.admin-link-style {
+    color: #eee;
+    font-weight: bold;
+    text-decoration: none;
+}
+.admin-link-style:hover, .admin-button-add:hover {
+    color: #fff;
+}
+.admin-main {
+    margin-left: 215px;
+    padding: 15px 25px;
+}
+.admin-navigation {
+    float: left;
+    width: 200px;
+    margin: 15px 0 0 15px;
+}
+.admin-navigation a {
+    display: block;
+    font-size: 14px;
+    padding: 3px 0 3px 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.admin-nav-header {
+    background: url("../css/bg.gif") repeat-x;
+    padding: 5px 10px;
+    border-radius: 3px 3px 0 0;
+    color: #eee;
+}
+.admin-button-add {
+    color: #eee;
+    text-align: center;
+    background: url("../css/bg.gif") repeat-x;
+    padding: 5px 10px;
+    border: 1px solid rgba(99, 173, 253, 0.54);
+    border-radius: 3px;
+}
+.admin-submit {
+    text-align: center;
+    background: url("../css/bg.gif") repeat-x;
+    border: 1px solid rgba(99, 173, 253, 0.54);
+    color: #eee;
+    padding: 2px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.admin-hk-separator {
+    font-size: 16px;
+}
+.admin-news-categor-link {
+    float: right;
+    text-decoration: underline;
+    font-size: 16px;
+}
+.admin-input-name input {
+    width: 100%;
+    font-size: 20px;
+    height: 32px;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 1px #ccc inset;
+    border: 1px solid #BBBBBB;
+    padding-left: 3px;
+}
+.admin-input-date input {
+    width: 216px;
+    font-size: 18px;
+    height: 22px;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 1px #ccc inset;
+    border: 1px solid #BBBBBB;
+    padding-left: 3px;
+
+}
+.admin-input-name label, .admin-input-lid label, .admin-input-img label, .admin-input-rubrics label, .admin-input-3col label {
+    color: #333;
+}
+.admin-input-vidjet {
+    margin-bottom: 5px;
+}
+.admin-input-vidjet label {
+    color: #333;
+    padding-bottom: 5px;
+}
+.admin-input-date label {
+    color: #333;
+    padding-top: 5px;
+}
+.admin-input-lid textarea {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 1px #ccc inset;
+    border: 1px solid #BBBBBB;
+    padding-left: 3px;
+}
+.admin-input-rubrics select {
+    width: 216px;
+    font-size: 14px;
+    height: 22px;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 1px #ccc inset;
+    border: 1px solid #BBBBBB;
+}
+.admin-input-3col {
+    width: 216px;
+    margin-top: 5px;
+}
+.admin-input-3col input {
+    float: left;
+}
+.admin-input-3col label {
+    padding-left: 20px;
+}
+

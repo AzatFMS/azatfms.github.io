@@ -1,0 +1,10 @@
+.wcm-menu > a {
+    color: #777;
+}
+.hcr-menu > div {
+    display: inline;
+    zoom: 1;
+}
+.hcr-menu > div  {
+    z-index: 99;
+}

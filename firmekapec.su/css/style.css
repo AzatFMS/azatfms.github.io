@@ -600,7 +600,7 @@ header .right {
 	background: url(images/head.png) no-repeat;
 	position: absolute;
     left: 44%;
-    top: 0;
+    top: 6px;
 }
 
 

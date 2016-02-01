@@ -11266,3 +11266,75 @@ Stack trace:
 REQUEST_URI=/css/images/v_dot.png
 HTTP_REFERER=http://firmekapec.su/css/style.css
 ---
+2016/02/01 22:20:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/images/8-168x168.png".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('css/images/8-16...')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\firmekapec.su\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/images/8-168x168.png
+HTTP_REFERER=http://firmekapec.su/
+---
+2016/02/01 22:20:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/images/5-168x168.png".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('css/images/5-16...')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\firmekapec.su\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/images/5-168x168.png
+HTTP_REFERER=http://firmekapec.su/
+---
+2016/02/01 22:20:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/images/4-168x168.png".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('css/images/4-16...')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\firmekapec.su\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/images/4-168x168.png
+HTTP_REFERER=http://firmekapec.su/
+---
+2016/02/01 22:20:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/images/Григорий2-168x168.jpg".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('css/images/????...')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\firmekapec.su\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/images/%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D0%B8%D0%B92-168x168.jpg
+HTTP_REFERER=http://firmekapec.su/
+---
+2016/02/01 22:20:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/images/3-168x168.png".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('css/images/3-16...')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\firmekapec.su\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/images/3-168x168.png
+HTTP_REFERER=http://firmekapec.su/
+---
+2016/02/01 22:20:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/images/7-168x168.png".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('css/images/7-16...')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\firmekapec.su\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/images/7-168x168.png
+HTTP_REFERER=http://firmekapec.su/
+---
+2016/02/01 22:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/images/Максим-168x168.jpg".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('css/images/????...')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\firmekapec.su\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/images/%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC-168x168.jpg
+HTTP_REFERER=http://firmekapec.su/
+---
+2016/02/01 22:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "css/images/1-168x168.png".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('css/images/1-16...')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\firmekapec.su\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/images/1-168x168.png
+HTTP_REFERER=http://firmekapec.su/
+---

@@ -214,6 +214,101 @@
 		</div>
     </div>
 	
+	<div class="methods">
+		<h2>Способы ликвидации</h2>
+		
+		<div class="wrapper clear">
+			<div class="method">
+				<div class="method_block">
+					<div class="method_img">
+						<img src="/css/images/method_1.png" alt="">
+					</div>
+					<div class="method_name">
+					ДОБРОВОЛЬНАЯ<br/>ЛИКВИДАЦИЯ
+					</div>
+					<div class="method_info">
+					Это способ ликвидации, результатом которого является исключение фирмы из ЕГРЮЛ. Процедура сложная и требует знания тонкостей процесса и присутствия профессиональных экспертов на каждом ее этапе. Многое зависит от организационно-правовой формы юридического лица, истории его деятельности, от тех проблем и сложностей, которые возникали в процессе его функционирования.
+					</div>
+					<div class="btn_block">
+						<div class="btn">
+							<span>Подать заявку</span>
+						</div>
+					</div>
+				</div>
+			</div><!--
+			--><div class="method">
+				<div class="method_block">
+					<div class="method_img">
+						<img src="/css/images/method_2.png" alt="">
+					</div>
+					<div class="method_name">
+					РЕОРГАНИЗАЦИЯ ПУТЁМ<br/> ПРИСОЕДИНЕНИЯ
+					</div>
+					<div class="method_info">
+					Компания прекращает свою деятельность, получает свидетельство о прекращении деятельности и исключается из реестра ЕГРЮЛ. Все долги, права и обязательства переходят правопреемнику (иному юридическому лицу). В случае возникновения каких — либо вопросов, претензий, имущественных притязаний у кредиторов или контролирующих органов, они будут обращаться к правопреемнику вашей фирмы.
+					</div>
+					<div class="btn_block">
+						<div class="btn">
+							<span>Подать заявку</span>
+						</div>
+					</div>
+				</div>
+			</div><!--
+			--><div class="method">
+				<div class="method_block">
+					<div class="method_img">
+						<img src="/css/images/method_3.png" alt="">
+					</div>
+					<div class="method_name">
+					АЛЬТЕНАТИВНАЯ <br/>ЛИКВИДАЦИЯ
+					</div>
+					<div class="method_info">
+					Процесс, при котором происходит смена директора и названия юридического лица. Компания не ликвидируется, а передается ответственность за ее текущую деятельность другим физическим или юридическим лицам, то есть формальные отношения с компанией бывшие собственники и генеральный директор прекращают.
+					</div>
+					<div class="btn_block">
+						<div class="btn">
+							<span>Подать заявку</span>
+						</div>
+					</div>
+				</div>
+			</div><!--
+			--><div class="method">
+				<div class="method_block">
+					<div class="method_img">
+						<img src="/css/images/method_4.png" alt="">
+					</div>
+					<div class="method_name">
+					БАНКРОТСТВО
+					</div>
+					<div class="method_info">
+					Этот способ ликвидации подходит для организаций, имеющих значительную задолженность перед кредиторами и контрагентами. После принятия решения о добровольной ликвидации фирмы, проводится аудит, вследствие которого выявляются признаки неплатежеспособности компании. Создается ликвидационная комиссия, которая в установленном законом порядке обращается в арбитражный суд с исковым 
+					</div>
+					<div class="btn_block">
+						<div class="btn">
+							<span>Подать заявку</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="methods_desc_block">
+				<div class="head">
+				</div>
+				<div class="methods_desc">
+					<div class="left">
+						Остались сомнения или вопросы?<br/>
+						Получите ответ нажав по кнопке
+					</div><!--
+					--><div class="right">
+						<div class="btn">
+							<span>Я не могу<br/>определиться</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/index.js"></script>
 </body>

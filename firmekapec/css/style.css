@@ -603,6 +603,62 @@ header .right {
     top: 6px;
 }
 
+.small-slider {
+	overflow: hidden;
+}
+
+.small-slider ul {
+	display: none;
+	width: 1000000px;
+}
+
+.small-slider li {
+	display: inline-block;
+	overflow: hidden;
+}
+
+.small-slider li .left {
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.small-slider li .right {
+	display: inline-block;
+	width: 80%;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.reviews {
+	padding: 0 45px;
+	position: relative;
+}
+
+.small-slider__next {
+	background: url('images/arr_right.png') center center no-repeat;
+	width: 45px;
+	height: 62px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -31px;
+	cursor: pointer;
+}
+
+.small-slider__prev {
+	background: url('images/arr_left.png') center center no-repeat;
+	width: 45px;
+	height: 62px;
+	position: absolute;
+	top: 50%;
+	margin-top: -31px;
+	left: 0;
+	cursor: pointer;
+}
 
 @media (max-width: 600px) {
 	

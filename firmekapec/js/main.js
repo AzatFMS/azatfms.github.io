@@ -13,12 +13,14 @@ $(function () {
             this.container.find('ul').show();
         },
         setPos: function() {
+			this.container.find('li').eq(this.item).show();
             this.container.find('ul').animate({marginLeft: -this.item*this.width_block}, 1000);
         },
         run: function () {
             var _self = this;
             this.setWidthBlocks();
-
+			this.container.find('li').hide();
+			this.container.find('li').eq(this.item).show();
             this.next_btn.click(function () {
                 if (_self.container.find('li').length - 1 > _self.item) {
                     _self.item++;

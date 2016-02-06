@@ -42,4 +42,29 @@ $(function () {
     };
 
     Slider.run();
+	
+	var RightPanel = {
+		panel: $('.right_panel'),
+		closeBtn: $('.close_panel'),
+		openBtn: $('.open_panel'),
+		openPanel: function() {
+			this.openBtn.hide();
+			this.panel.addClass('opened');
+		},
+		closePanel: function() {
+			this.openBtn.show();
+			this.panel.removeClass('opened');
+		},
+		run: function() {
+			var _self = this;
+			this.closeBtn.click(function() {
+				_self.closePanel();
+			});
+			this.openBtn.click(function() {
+				_self.openPanel();
+			});
+		}
+	}
+	
+	RightPanel.run();
 });     

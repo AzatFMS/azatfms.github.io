@@ -49,10 +49,12 @@ $(function () {
 		openBtn: $('.open_panel'),
 		openPanel: function() {
 			this.openBtn.hide();
+			this.closeBtn.show();
 			this.panel.addClass('opened');
 		},
 		closePanel: function() {
 			this.openBtn.show();
+			this.closeBtn.hide();
 			this.panel.removeClass('opened');
 		},
 		run: function() {

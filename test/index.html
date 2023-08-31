@@ -28,13 +28,7 @@
 								link.download = downloadFileName;
 							}
 							document.body.appendChild(link);
-							link.dispatchEvent(
-									new MouseEvent('click', {
-										view: window,
-										bubbles: true,
-										cancelable: true,
-									})
-							);
+							link.click();
 							document.body.removeChild(link);
 							URL.revokeObjectURL(href);
 						});

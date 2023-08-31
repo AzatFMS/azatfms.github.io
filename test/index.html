@@ -14,7 +14,6 @@
 				})
 						.then((response) => response.blob())
 						.then((response) => {
-							alert(response);
 							const href = URL.createObjectURL(response);
 							const link = document.createElement('a');
 							link.href = href;

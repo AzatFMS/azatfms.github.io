@@ -7,7 +7,9 @@
 	<body>
 		<button>TEST</button>
 		<a href="test.zip" download="test.zip">TEST4</a>
-		<span>TEST5</span>
+		<a id="test" class="ant-typography sc-kpDqfm gnAhio" href="" target="_blank" rel="noopener noreferrer">
+			TEST5
+		</a>
 		<script>
 			document.querySelector('button').addEventListener('click', () => {
 				fetch('test.zip', {
@@ -34,7 +36,7 @@
 							URL.revokeObjectURL(href);
 						});
 			})
-			document.querySelector('span').addEventListener('click', () => {
+			document.querySelector('#test').addEventListener('click', () => {
 				window.open('test.zip', '_blank');
 			})
 		</script>

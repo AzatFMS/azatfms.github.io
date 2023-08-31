@@ -12,15 +12,11 @@
 				})
 						.then((response) => response.blob())
 						.then((response) => {
-							console.log(response.data)
-							const href = URL.createObjectURL(response.data);
+							const href = URL.createObjectURL(response);
 							const link = document.createElement('a');
 							link.href = href;
 							const downloadFileName =
-									fileName ||
-									response.headers['content-disposition']?.match(
-											/filename="([^"]+)"/
-									)?.[1];
+									'test.zip';
 							if (downloadFileName) {
 								link.download = downloadFileName;
 							}

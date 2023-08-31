@@ -8,35 +8,10 @@
 		<button>TEST</button>
 		<a href="test.zip" download="test.zip">TEST4</a>
 		<a id="test" class="ant-typography sc-kpDqfm gnAhio" href="" target="_blank" rel="noopener noreferrer">
-			TEST5
+			TEST6
 		</a>
 		<script>
-			document.querySelector('button').addEventListener('click', () => {
-				fetch('test.zip', {
-					method: 'GET',
-					responseType: 'blob',
-					headers: {
-						Accept: undefined,
-						'Content-Type': undefined,
-					},
-				})
-						.then((response) => response.blob())
-						.then((response) => {
-							const href = URL.createObjectURL(response);
-							const link = document.createElement('a');
-							link.href = href;
-							const downloadFileName =
-									'test.zip';
-							if (downloadFileName) {
-								link.download = downloadFileName;
-							}
-							document.body.appendChild(link);
-							link.click();
-							document.body.removeChild(link);
-							URL.revokeObjectURL(href);
-						});
-			})
-			document.querySelector('#test').addEventListener('click', () => {
+			document.querySelector('#test').addEventListener('click', async () => {
 				window.open('test.zip', '_blank');
 			})
 		</script>

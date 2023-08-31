@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<button>TEST</button>
+		<script>
+			document.querySelector('button').addEventListener('click', () => {
+				const href = 'https://static.tildacdn.com/tild3164-3633-4237-a662-643335646166/-1___1.jpg';
+				const link = document.createElement('a');
+				link.href = href;
+				document.body.appendChild(link);
+				link.click();
+				document.body.removeChild(link);
+				URL.revokeObjectURL(href);
+			})
+		</script>
+	</body>
+</html>

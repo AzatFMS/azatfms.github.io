@@ -18,7 +18,9 @@
 						resolve(1);
 					}, 2000);
 				}))().then(() => {
-					window.open('test.zip', '_blank');
+					setTimeout(() => {
+						window.open('test.zip', '_blank');
+					}
 				});
 			})
 		</script>

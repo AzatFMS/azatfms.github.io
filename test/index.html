@@ -28,13 +28,10 @@
 						const a = document.createElement('a');
 						a.href = 'test.zip';
 						a.setAttribute('target', '_blank');
-						if (!isIOS()) {
+
 							if (confirm('Скачать')) {
 								a.click();
 							}
-						} else {
-							a.click();
-						}
 				});
 			})
 			document.querySelector('button').addEventListener('click', (e) => {

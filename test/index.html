@@ -11,6 +11,12 @@
 			TEST8
 		</a>
 		<script>
+			function isIOS() {
+				var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+				// iOS detection from: http://stackoverflow.com/a/9039885/177710
+				return (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream);
+			}
+
 			document.querySelector('#test').addEventListener('click', (e) => {
 				e.preventDefault();
 				(() => new Promise((resolve) => {
@@ -22,7 +28,13 @@
 						const a = document.createElement('a');
 						a.href = 'test.zip';
 						a.setAttribute('target', '_blank');
-						a.click();
+						if (isIOS()) {
+							if (confirm('Скачать')) {
+								a.click();
+							}
+						} else {
+							a.click();
+						}
 				});
 			})
 		</script>

@@ -8,11 +8,17 @@
 		<button>TEST</button>
 		<a href="test.zip" download="test.zip">TEST4</a>
 		<a id="test" class="ant-typography sc-kpDqfm gnAhio" href="" target="_blank" rel="noopener noreferrer">
-			TEST6
+			TEST7
 		</a>
 		<script>
-			document.querySelector('#test').addEventListener('click', async () => {
-				window.open('test.zip', '_blank');
+			document.querySelector('#test').addEventListener('click', () => {
+				(() => new Promise((resolve) => {
+					setTimeout(() => {
+						resolve(1);
+					}, 2000);
+				}))().then(() => {
+					window.open('test.zip', '_blank');
+				});
 			})
 		</script>
 	</body>

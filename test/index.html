@@ -11,7 +11,8 @@
 			TEST7
 		</a>
 		<script>
-			document.querySelector('#test').addEventListener('click', () => {
+			document.querySelector('#test').addEventListener('click', (e) => {
+				e.preventDefault();
 				(() => new Promise((resolve) => {
 					setTimeout(() => {
 						resolve(1);

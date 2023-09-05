@@ -28,7 +28,7 @@
 						const a = document.createElement('a');
 						a.href = 'test.zip';
 						a.setAttribute('target', '_blank');
-						if (isIOS()) {
+						if (!isIOS()) {
 							if (confirm('Скачать')) {
 								a.click();
 							}
@@ -36,6 +36,20 @@
 							a.click();
 						}
 				});
+			})
+			document.querySelector('button').addEventListener('click', (e) => {
+
+
+					const a = document.createElement('a');
+					a.href = 'test.zip';
+					a.setAttribute('target', '_blank');
+					if (!isIOS()) {
+						if (confirm('Скачать')) {
+							a.click();
+						}
+					} else {
+						a.click();
+					}
 			})
 		</script>
 	</body>

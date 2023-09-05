@@ -18,9 +18,11 @@
 						resolve(1);
 					}, 2000);
 				}))().then(() => {
-					setTimeout(() => {
-					window.open('test.zip', '_blank');
-					})
+
+						const a = document.createElement('a');
+						a.href = 'test.zip';
+						a.setAttribute('target', '_blank');
+						a.click();
 				});
 			})
 		</script>
